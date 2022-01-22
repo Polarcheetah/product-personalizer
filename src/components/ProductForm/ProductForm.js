@@ -21,7 +21,7 @@ const ProductForm = ({
     Summary
     ==========
     Name: ${title}
-    Price: ${getPrice()}
+    Price: ${getPrice}
     Size: ${currentSize}
     Color: ${currentColor}`);
   };
@@ -58,7 +58,7 @@ ProductForm.propTypes = {
   setCurrentColor: PropTypes.func.isRequired,
   currentSize: PropTypes.string.isRequired,
   setCurrentSize: PropTypes.func.isRequired,
-  getPrice: PropTypes.func.isRequired,
+  getPrice: PropTypes.number.isRequired,
 };
 
 export default ProductForm;

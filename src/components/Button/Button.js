@@ -1,13 +1,10 @@
 import styles from './Button.module.scss';
 import clsx from 'clsx';
 
-const Button = (props) => {
+const Button = ({ className, action, children }) => {
   return (
-    <button
-      className={clsx(styles.button, props.className)}
-      onClick={props.action}
-    >
-      {props.children}
+    <button className={clsx(styles.button, className)} onClick={action}>
+      {children}
     </button>
   );
 };
